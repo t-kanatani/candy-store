@@ -8,11 +8,85 @@
     <script src="https://rawgit.com/mayognaise/aframe-html-shader/master/dist/aframe-html-shader.min.js"></script>
     <script src="js/html2canvas.js"></script>
     <script src="main.js"></script>
+    <style>
+      .top-bar {
+          background: url(images/bar_background.jpg);
+          border: 0;
+          top: 0;
+          cursor: pointer;
+          min-width: 100%;
+          min-height: 8%;
+          position: absolute;
+          right: 0;
+          transition: background-color .05s ease;
+          -webkit-transition: background-color .05s ease;
+          z-index: 8999;
+          filter: alpha(opacity=70);
+          -moz-opacity:0.7;
+          opacity:0.7;
+      }
+      .logo {
+        background: url(images/taniguchi_logo.png) 0% -40%/70%  no-repeat;
+        border: 0;
+        top: 0;
+        cursor: pointer;
+        min-width: 420px;
+        min-height: 180px;
+        position: absolute;
+        left: 0;
+        z-index: 9999;
+      }
+      .bottom-bar {
+          background: url(images/bar_background.jpg);
+          border: 0;
+          bottom: 0;
+          cursor: pointer;
+          min-width: 100%;
+          min-height: 5%;
+          position: absolute;
+          transition: background-color .05s ease;
+          -webkit-transition: background-color .05s ease;
+          z-index: 8999;
+          filter: alpha(opacity=70);
+          -moz-opacity:0.7;
+          opacity:0.7;
+      }
+      #copyright {
+        position: absolute;
+        right: 2%;
+        bottom: 25%;
+        color: black;
+        font-size: 14px;
+      }
+      #icons {
+        text-align: center;
+      }
+      #detail-button {
+        color: #996515;
+        position: absolute;
+        top:35%;
+        right: 2%;
+      }
+    </style>
   </head>
   <body>
-    <a-scene initial>
-    </a-scene>
-    <div id="target1" class="target">
+    <div class="top-bar">
+      <div id="detail-button">店舗情報</div>
+    </div>
+    <div class="logo"></div>
+    <a-scene initial></a-scene>
+    <div class="bottom-bar">
+      <div id="icons">
+        <img src="images/ic_keyboard_arrow_left_black_36px.svg">
+        <img src="images/ic_keyboard_arrow_up_black_36px.svg">
+        <img src="images/ic_keyboard_arrow_down_black_36px.svg">
+        <img src="images/ic_keyboard_arrow_right_black_36px.svg">
+        <img src="images/ic_zoom_in_black_36px.svg">
+        <img src="images/ic_zoom_out_black_36px.svg">
+        <img src="images/ic_home_black_36px.svg">
+        <img src="images/ic_fullscreen_black_36px.svg">
+      </div>
+      <div id="copyright"><a href="http://torisankanasan.com">Copyright(C) 2017 torisankanasan All Rights Reserved.</a></div>
     </div>
   </body>
 </html>

@@ -134,7 +134,7 @@
         img.id = key;
         assetsObj.appendChild(img);
       }
-      
+
       // add camera
       var cameraObj = document.querySelector("a-camera");
       if (cameraObj === null) {
@@ -291,12 +291,6 @@
       var sceneObj = document.querySelector("a-scene");
       this.el.addEventListener("click", function() {
         console.log("tap-action");
-//        var plane = document.createElement("a-plane");
-//        plane.setAttribute("width", "50");
-//        plane.setAttribute("height", "50");
-//        plane.setAttribute('position', "0 0 -25");
-//        plane.setAttribute("material", "shader:html;target: #target1;");
-//        sceneObj.appendChild(plane);
       });
     }
   });
